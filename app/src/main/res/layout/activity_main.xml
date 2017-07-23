@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/quiz_bg"
+    android:background="@drawable/quiz_bg"
+    tools:context="com.example.android.physicsquiz.MainActivity">
+
+    <Button
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Option d" />
+
+    <Button
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answer4"
+        android:layout_centerHorizontal="true"
+        android:text="Option c" />
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answer3"
+        android:layout_centerHorizontal="true"
+        android:text="Option b" />
+
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answer2"
+        android:layout_centerHorizontal="true"
+        android:text="Option a" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Score"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="368dp"
+        android:layout_height="268dp"
+        android:layout_below="@+id/score"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Question" />
+</RelativeLayout>
